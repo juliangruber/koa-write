@@ -1,7 +1,5 @@
 var write = require('co-write');
 
-module.exports = write;
-
 /**
  * Write `chunk` to `ctx` and throw if the request ended.
  *
@@ -9,7 +7,7 @@ module.exports = write;
  * @param {Mixed} chunk
  */
 
-function write(ctx, chunk){
+module.exports = function *write(ctx, chunk){
   if (!ctx.res.socket.writable) {
     var err = new Error('write after end');
     err.status = 200;
