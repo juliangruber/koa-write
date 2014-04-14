@@ -1,6 +1,6 @@
 {
   "name": "koa-write",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Write to koa bodies in generator style",
   "repository": "juliangruber/koa-write",
   "license": "MIT",
